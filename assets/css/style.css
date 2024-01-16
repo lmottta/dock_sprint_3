@@ -104,7 +104,7 @@ h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  
 }
 
 #header.header-scrolled,
@@ -908,7 +908,23 @@ Partner Logo
   cursor: pointer; /* Define o cursor como um ponteiro ao passar o mouse */
 }
 
-
+.start-docking-btn
+{
+  text-align: center;
+  width: auto;
+  margin: 0 auto;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: #003734;
+  font-size: 22px;
+  color: #ffffff;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #003734;
+  border-width: 1px;
+  box-shadow: #000000 0px 0px 10px 0px;
+}
 .partner-logo {
   text-align: center;
   width: auto;
