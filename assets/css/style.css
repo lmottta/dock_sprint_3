@@ -253,6 +253,19 @@ h6 {
   font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', sans-serif;
   
 }
+.button-env {
+  padding: 10px 15px ;
+  margin-left: 10px; /* espaço entre os botões e o menu */
+  border: 1px solid #3a5b4f;
+  border-radius: 15px;
+  background-color: #30655f; /* ou qualquer cor desejada */
+  color: #fff;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+  font-size: 20px; 
+  font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  
+}
 
 @media screen and (max-width: 600px) {
   .button {
@@ -272,8 +285,32 @@ h6 {
   }
   
 }
+@media screen and (max-width: 600px) {
+  .button-env {
+  
+  margin-top: 3%; /* espaço entre os botões e o menu */
+  border: 1px solid #035a45;
+  border-radius: 15px;
+  background-color: #003734; /* ou qualquer cor desejada */
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;  
+  }
+  
+  .navbar {
+    justify-content: center;
+   
+  }
+  
+}
 
-.button:hover {
+
+.button-env:hover {
+  border-color: #36d9c9 /* cor mais escura no hover */;
+  background-color: #30655f; /* cor mais escura no hover */
+ }
+
+ .button:hover {
   border-color: #36d9c9 /* cor mais escura no hover */;
   background-color: #30655f; /* cor mais escura no hover */
  }
