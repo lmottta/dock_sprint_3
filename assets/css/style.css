@@ -185,6 +185,7 @@ h6 {
 
 .navbar li {
   position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   
 }
 
@@ -237,7 +238,7 @@ h6 {
   margin-left: 10px; /* espaço entre os botões e o menu */
   border: 1px solid #3a5b4f;
   border-radius: 15px;
-  background-color: #00373451; /* ou qualquer cor desejada */
+  background-color: #30655f; /* ou qualquer cor desejada */
   color: #fff;
   text-transform: uppercase;
   transition: background-color 0.3s;
@@ -265,9 +266,9 @@ h6 {
 }
 
 .button:hover {
-  background-color:rgb(2, 90, 53); /* cor mais escura no hover */
-  box-shadow: #33ffb4 0px 0px 0px 1px;
-}
+  border-color: #36d9c9 /* cor mais escura no hover */;
+  background-color: #30655f; /* cor mais escura no hover */
+ }
 
 .navbar a,
 .navbar a:focus {
@@ -1044,7 +1045,7 @@ font-style: italic ;
   background: #00b371;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1134px) {
   .cta {
     background-attachment: scroll;
   }
@@ -1695,7 +1696,7 @@ font-style: italic ;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #00b371;
+  background: #3;
 }
 
 @keyframes animate-loading {
