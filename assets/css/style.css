@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+font-family: "Roboto", sans-serif;
 }
 
 
@@ -40,6 +40,15 @@ h6 {
   overflow: hidden;
   background: #fff;
 }
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 
 #preloader:before {
   content: "";
@@ -106,7 +115,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   background: linear-gradient(to right, #209c9c, #052e2e, #033131);
-  }
+}
   
 
   
@@ -131,7 +140,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 60px;
 }
 
 @media (max-width: 992px) {
@@ -166,6 +175,18 @@ h6 {
   }
 }
 
+/* Responsive Design for Navigation */
+@media screen and (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -176,6 +197,8 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 15px;
+  
   
   
 }
@@ -191,15 +214,14 @@ h6 {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
-.navbar li {
-  position: relative;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
+
+
 .navbar>ul>li {
   position: relative;
   white-space: nowrap;
-  margin: 0 12px;
+  margin: 0 20px 0 20px;
+
+  
   
 }
 
@@ -245,8 +267,8 @@ h6 {
   margin-left: 10px; /* espaço entre os botões e o menu */
   border: 1px solid #3a5b4f;
   border-radius: 15px;
-  background-color: #30655f; /* ou qualquer cor desejada */
-  color: #fff;
+  color: #ededed;
+  background-color: transparent; /* ou qualquer cor desejada */
   text-transform: uppercase;
   transition: background-color 0.3s;
   font-size: 15px; 
@@ -258,12 +280,12 @@ h6 {
   margin-left: 10px; /* espaço entre os botões e o menu */
   border: 1px solid #3a5b4f;
   border-radius: 15px;
-  background-color: #30655f; /* ou qualquer cor desejada */
+  background-color: transparent; /* ou qualquer cor desejada */
   color: #fff;
   text-transform: uppercase;
   transition: background-color 0.3s;
   font-size: 20px; 
-  font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', sans-serif;
+
   
 }
 
@@ -335,6 +357,7 @@ h6 {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
+
 }
 
 .navbar>ul>li>a:before {
@@ -361,7 +384,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #fff;
+  color: #36d9c9;
 }
 
 .navbar .dropdown ul {
@@ -552,9 +575,15 @@ h6 {
   width: 100%;
   height: 80vh;
   background-image: url("/assets/img-2/BG-green.png");
-  
   background-size: cover;
   position: relative;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 0;
+  }
 }
 
 #hero:before {
@@ -952,7 +981,7 @@ Partner Logo
 
 .logo-top {
   text-align: left; /* Alinha o texto à esquerda */
-  width: 200px; /* Ajusta a largura automaticamente */
+  width: 300px; /* Ajusta a largura automaticamente */
   margin: 0 auto; /* Centraliza horizontalmente */
   padding: 20px; /* Adiciona espaçamento interno ao logotipo */
   transition: transform 0.3s ease-in-out; /* Define uma transição suave para transformações */
@@ -1744,7 +1773,7 @@ font-style: italic ;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #3;
+  background: #343434;
 }
 
 @keyframes animate-loading {
