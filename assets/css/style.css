@@ -1980,4 +1980,11 @@ font-style: italic ;
   }
 }
 
+@media screen and (min-width: 450px) and (max-width: 990px) {
+  #hero {
+    width: 100%; /* Garante que ocupa toda a largura */
+    padding-top: 150px; /* Adiciona um pouco de espaço interno nas bordas */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+  }
+}
 
