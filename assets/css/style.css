@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #444444;
 }
 
@@ -24,7 +24,13 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Jost", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+/*Add pelo Dev */
+.strong, h2 {
+  font-weight: 500;
+
 }
 
 /*--------------------------------------------------------------
@@ -38,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #37517e;
+  background-color: #010e21;
 }
 
 #preloader:before {
@@ -46,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #37517e;
+  border: 6px solid #36d9c9;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -114,10 +120,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
+  
 }
 
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(40, 58, 90, 0.9);
+  background: linear-gradient(to right, #209c9c, #033131);
 }
 
 #header .logo {
@@ -135,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 60px;
 }
 
 /*--------------------------------------------------------------
@@ -145,7 +152,10 @@ h1, h2, h3, h4, h5, h6 {
 * Desktop Navigation 
 */
 .navbar {
-  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
 .navbar ul {
@@ -158,7 +168,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar li {
   position: relative;
+  
 }
+
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 3px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+  position: relative;
+  
+}
+
+/*
+Original distancia dos itens Navbar
 
 .navbar a, .navbar a:focus {
   display: flex;
@@ -171,6 +200,7 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
   transition: 0.3s;
 }
+*/
 
 .navbar a i, .navbar a:focus i {
   font-size: 12px;
@@ -178,9 +208,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 
+/* Original navbar
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   color: #47b2e4;
 }
+*/
 
 .navbar .getstarted {
   padding: 8px 20px;
@@ -197,10 +229,12 @@ h1, h2, h3, h4, h5, h6 {
   background: #31a9e1;
 }
 
+/*
+Original Navbar
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 14px;
+  left: -10px;
   top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;
@@ -212,9 +246,10 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   border-radius: 4px;
 }
-
+*/
 .navbar .dropdown ul li {
   min-width: 200px;
+  
 }
 
 .navbar .dropdown ul a {
@@ -229,9 +264,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 
+/*
+Original Navbar
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
   color: #47b2e4;
 }
+*/
 
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -371,7 +409,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: #37517e;
+  background: linear-gradient(to bottom, #010e21, #003751, #004e62, #00838d, #51d4c6);
 }
 
 #hero .container {
@@ -384,6 +422,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+  
 }
 
 #hero h2 {
@@ -393,7 +432,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Jost", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -403,11 +442,16 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
   margin: 10px 0 0 0;
   color: #fff;
-  background: #47b2e4;
+  background: #003734;
+  
 }
 
 #hero .btn-get-started:hover {
-  background: #209dd8;
+  background: #003734b0;
+  border-color: #0c3c53;
+  border-style: inset;
+  border-radius: 5px;
+  transition: 0ms;
 }
 
 #hero .btn-watch-video {
@@ -1805,3 +1849,113 @@ section {
     padding-top: 4px;
   }
 }
+
+/*customizações do DEV */
+
+.btn-account {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: flex;
+  padding: 10px 28px 11px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 15px 10px 10px 15px; /* Added missing 'px' for the last value */
+  color: #fff;
+  background: #00838d;
+  border-color: #209c9c;
+  white-space: nowrap;
+}
+
+
+.btn-envelope {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: flex;
+  padding: 10px 28px 11px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 15px 10px 10px 15px; /* Added missing 'px' for the last value */
+  color: #fff;
+  background: #00848d00;
+  border-color: #209c9c;
+  white-space: nowrap;
+  }
+
+.btn-account:hover, .btn-envelope:hover {
+  box-shadow: 0px 0px 10px #000;
+  border-color: #209c9c;
+  background-color: #30655f;
+}
+
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+  transition: 0.3s;
+  position: relative;
+}
+  
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+  color: #ffffff;
+  background-color: #36d9c9;
+}
+
+.navbar>ul>li>a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  margin-bottom: -32px;
+  left: 0;
+  background-color: #36d9c9;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover:before,
+.navbar li:hover>a:before,
+.navbar .active:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #36d9c9;
+}
+
+.navbar .dropdown ul {
+     display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    transition: 0.2s;
+    border-radius: 5px;
+    width: fit-content;
+  }
