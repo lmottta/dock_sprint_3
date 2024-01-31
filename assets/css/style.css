@@ -26,6 +26,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
+  color:  white;
 }
 /*Add pelo Dev */
 .strong, h2 {
@@ -218,9 +219,10 @@ Original distancia dos itens Navbar
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 50px;
-  color: #fff;
+  color: #47b2e4;
   font-size: 14px;
-  border: 2px solid #47b2e4;
+  border: 2px solid #31a9e1;
+  background-color: #fff;
   font-weight: 600;
 }
 
@@ -1850,7 +1852,7 @@ section {
   }
 }
 
-/*customizações do DEV */
+  /*customizações do DEV */ 
 
 .btn-account {
   font-family: "Roboto", sans-serif;
