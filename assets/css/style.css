@@ -387,7 +387,7 @@ h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: #37517e;
+  background: linear-gradient(to bottom, #010e21, #003751, #004e62, #00838d, #51cfd4);
 }
 
 #hero .container {
@@ -419,7 +419,7 @@ h6 {
   transition: 0.5s;
   margin: 10px 0 0 0;
   color: #fff;
-  background: #47b2e4;
+  background: #2aadab;
 }
 
 #hero .btn-get-started:hover {
@@ -1822,4 +1822,17 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+}
+
+/*Criados pelo Dev*/
+.img-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.btn-get-started:hover .img-icon {
+  transform: rotate(360deg);
+  transition: transform 0.3s;
 }
