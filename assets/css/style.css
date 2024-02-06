@@ -1836,3 +1836,41 @@ section {
   transform: rotate(360deg);
   transition: transform 0.3s;
 }
+
+/*botão aceito cookie*/
+.button.getstarted,
+.button.getstarted:focus {
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 14px;
+  border: 2px solid #47b2e4;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.button.getstarted:hover,
+.button.getstarted:focus:hover {
+  color: #fff;
+  background: #31a9e1;
+}
+/*identificação do cookie*/
+.cookieConsent {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+}
+.cookieConsent .getstarted {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
