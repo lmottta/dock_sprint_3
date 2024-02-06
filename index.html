@@ -73,13 +73,6 @@
 </script>
 
 <body>
-<!-- Cookie Consent -->
-<div id="cookieConsent">
-  Este site usa cookies para garantir que você obtenha a melhor experiência. 
-  <button class="getstarted" onclick="acceptCookies()">Aceito</button>
-</div>
-<!-- End Cookie Consent -->
-
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
@@ -858,10 +851,25 @@
     
     
     </div>
+    
+    <script>function acceptCookies() {
+      document.getElementById('cookieConsent').style.display = 'none';
+      // Add code here to set cookie indicating user has accepted
+    }
+
+    </script>
+   <div class="cookieConsent" id="cookieConsent">
+     This website uses cookies to ensure you get the best experience on our website.
+     <button class="button getstarted" onclick="acceptCookies">Accept</button>
+   </div>
+
+
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  
 
   <!-- Vendor JS Files -->
   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../../assets/vendor/aos/aos.js"></script>

@@ -1865,8 +1865,8 @@ section {
   text-align: center;
   padding: 10px;
 }
-.cookieConsent .getstarted {
-  background-color: #4CAF50;
+.cookieConsent {
+  background-color: #003751;
   color: white;
   padding: 10px 20px;
   border: none;
