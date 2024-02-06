@@ -192,14 +192,14 @@ h6 {
   border-radius: 50px;
   color: #fff;
   font-size: 14px;
-  border: 2px solid #47b2e4;
+  border: 2px solid  #2aadab;
   font-weight: 600;
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #31a9e1;
+  background: #2aadab;
 }
 
 .navbar .dropdown ul {
@@ -423,7 +423,7 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #209dd8;
+  background: #249a98;
 }
 
 #hero .btn-watch-video {
