@@ -852,17 +852,21 @@
     
     </div>
     
-    <script>function acceptCookies() {
-      document.getElementById('cookieConsent').style.display = 'none';
-      // Add code here to set cookie indicating user has accepted
-    }
-
-    </script>
+   <script>
+     function acceptCookies() {
+       var cookieConsent = document.getElementById('cookieConsent');
+       if (cookieConsent) {
+         cookieConsent.style.display = 'none';
+         // Add code here to set cookie indicating user has accepted
+       } else {
+         console.error('Cookie consent element not found');
+       }
+     }
+   </script>
    <div class="cookieConsent" id="cookieConsent">
      This website uses cookies to ensure you get the best experience on our website.
-     <button class="button getstarted" onclick="acceptCookies">Accept</button>
+     <button class="button getstarted" onclick="acceptCookies()">Accept</button>
    </div>
-
 
   </footer><!-- End Footer -->
 
