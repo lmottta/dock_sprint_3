@@ -47,30 +47,6 @@ h6 {
   background: linear-gradient(to bottom, #010e21, #003751, #004e62, #00838d, #51cfd4); 
 }
 
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #2aadab;
-  border-top-color: #fff;
-  border-bottom-color: #fff;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -81,11 +57,11 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #47b2e4;
   width: 40px;
   height: 40px;
   border-radius: 50px;
   transition: all 0.4s;
+  border: 2px solid #2aadab;
 }
 
 .back-to-top i {
@@ -95,7 +71,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #6bc1e9;
+  background: #2aadab;
   color: #fff;
 }
 
@@ -1845,7 +1821,7 @@ section {
   border-radius: 50px;
   color: #ffffff;
   font-size: 14px;
-  border: 2px solid #47b2e4;
+  border: 2px solid #2aadab;
   font-weight: 600;
   background-color: transparent;
 }
@@ -1853,7 +1829,7 @@ section {
 .button.getstarted:hover,
 .button.getstarted:focus:hover {
   color: #fff;
-  background: #31a9e1;
+  background: #2aadab;
 }
 /*identificação do cookie*/
 .cookieConsent {
@@ -1873,4 +1849,25 @@ section {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+#preloader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url('../img/favicon.ico') center center/contain no-repeat;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
