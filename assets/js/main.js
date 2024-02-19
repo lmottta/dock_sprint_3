@@ -1,5 +1,5 @@
 /**
-* Template Name: Arsha
+* Temlate Name: Arsha
 * Updated: Jan 29 2024 with Bootstrap v5.3.2
 * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
 * Author: BootstrapMade.com
@@ -256,3 +256,37 @@
   });
 
 })()
+
+/* Criado pelo Dev */
+document.addEventListener("DOMContentLoaded", function() {
+  const carousel = document.querySelector('.carousel-container');
+  let intervalId;
+  const itemsToShow = 6;
+
+  function moveItems() {
+    const items = carousel.children;
+    for (let i = 0; i < itemsToShow; i++) {
+      if (items[i]) {
+        carousel.appendChild(items[i].cloneNode(true));
+      }
+    }
+    // Remova os itens que foram movidos, do início do carrossel
+    for (let i = 0; i < itemsToShow; i++) {
+      carousel.removeChild(items[0]);
+    }
+  }
+
+  function startCarousel() {
+    intervalId = setInterval(moveItems, 3000);
+  }
+
+  function stopCarousel() {
+    clearInterval(intervalId);
+  }
+
+  carousel.addEventListener('mouseenter', stopCarousel);
+  carousel.addEventListener('mouseleave', startCarousel);
+
+  startCarousel();
+});
+

@@ -62,6 +62,7 @@ h6 {
   border-radius: 50px;
   transition: all 0.4s;
   border: 2px solid #2aadab;
+  background: linear-gradient(to bottom, #010e21, #003751, #004e62, #00838d, #51cfd4);
 }
 
 .back-to-top i {
@@ -93,6 +94,7 @@ h6 {
 #header.header-inner-pages {
   background-color: #fff;
 }
+
 
 #header .logo {
   font-size: 30px;
@@ -494,7 +496,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f3f5fa;
+  background-image: linear-gradient(#61666642, #00343783);
 }
 
 .section-title {
@@ -1870,4 +1872,24 @@ section {
   100% {
     transform: rotate(360deg);
   }
+
+  /* Efeito Srcolled branco*/
 }
+#header.header-scrolled .getstarted {
+  color: #373737;
+}
+#header.header-scrolled .getstarted:hover {
+  background-color: #2aadab;
+  color: #fff;
+}
+
+/* Efeito Srcolled branco Navbar a*/
+
+.header-scrolled .navbar a {
+  color: #373737;
+}
+.header-scrolled .navbar a:hover {
+
+  color: #2aadab;
+}
+
