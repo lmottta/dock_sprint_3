@@ -44,7 +44,31 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: linear-gradient(to bottom, #010e21, #003751, #004e62, #00838d, #51cfd4); 
+  background: #37517e;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #37517e;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*--------------------------------------------------------------
@@ -57,12 +81,11 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
+  background: #47b2e4;
   width: 40px;
   height: 40px;
   border-radius: 50px;
   transition: all 0.4s;
-  border: 2px solid #2aadab;
-  background-color: #2aadab;
 }
 
 .back-to-top i {
@@ -72,7 +95,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #34bfbd;
+  background: #6bc1e9;
   color: #fff;
 }
 
@@ -92,9 +115,8 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background-color: #fff;
+  background: rgba(40, 58, 90, 0.9);
 }
-
 
 #header .logo {
   font-size: 30px;
@@ -160,7 +182,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #2aadab;
+  color: #47b2e4;
 }
 
 .navbar .getstarted,
@@ -170,14 +192,14 @@ h6 {
   border-radius: 50px;
   color: #fff;
   font-size: 14px;
-  border: 2px solid  #2aadab;
+  border: 2px solid #47b2e4;
   font-weight: 600;
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #2aadab;
+  background: #31a9e1;
 }
 
 .navbar .dropdown ul {
@@ -215,7 +237,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #2aadab;
+  color: #47b2e4;
 }
 
 .navbar .dropdown:hover>ul {
@@ -365,7 +387,7 @@ h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: linear-gradient(to bottom, #010e21, #003751, #004e62, #00838d, #51cfd4);
+  background: #37517e;
 }
 
 #hero .container {
@@ -397,11 +419,11 @@ h6 {
   transition: 0.5s;
   margin: 10px 0 0 0;
   color: #fff;
-  background: #2aadab;
+  background: #47b2e4;
 }
 
 #hero .btn-get-started:hover {
-  background: #249a98;
+  background: #209dd8;
 }
 
 #hero .btn-watch-video {
@@ -1801,95 +1823,3 @@ section {
     padding-top: 4px;
   }
 }
-
-/*Criados pelo Dev*/
-.img-icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-  transition: transform 0.3s;
-}
-
-.btn-get-started:hover .img-icon {
-  transform: rotate(360deg);
-  transition: transform 0.3s;
-}
-
-/*botão aceito cookie*/
-.button.getstarted,
-.button.getstarted:focus {
-  padding: 8px 20px;
-  margin-left: 30px;
-  border-radius: 50px;
-  color: #ffffff;
-  font-size: 14px;
-  border: 2px solid #2aadab;
-  font-weight: 600;
-  background-color: transparent;
-}
-
-.button.getstarted:hover,
-.button.getstarted:focus:hover {
-  color: #fff;
-  background: #2aadab;
-}
-/*identificação do cookie*/
-.cookieConsent {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #f1f1f1;
-  text-align: center;
-  padding: 10px;
-}
-.cookieConsent {
-  background-color: #003751;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-
-#preloader {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: url('../img/favicon.ico') center center/contain no-repeat;
-  width: 100px;
-  height: 100px;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-
-  /* Efeito Srcolled branco*/
-}
-#header.header-scrolled .getstarted {
-  color: #373737;
-}
-#header.header-scrolled .getstarted:hover {
-  background-color: #2aadab;
-  color: #fff;
-}
-
-/* Efeito Srcolled branco Navbar a*/
-
-.header-scrolled .navbar a {
-  color: #373737;
-}
-.header-scrolled .navbar a:hover {
-
-  color: #2aadab;
-}
-
