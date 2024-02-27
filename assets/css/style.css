@@ -61,7 +61,7 @@ h6 {
   height: 40px;
   border-radius: 50px;
   transition: all 0.4s;
-  border: 2px solid #2aadab;
+  border: 2px solid #ffffff;
   background-color: #2aadab;
 }
 
@@ -1673,7 +1673,9 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  background: linear-gradient(to bottom, #010e21, #003751, #004e62, #00838d, #51cfd4);
+  display: flex;
+  justify-content: center;
 }
 
 #footer .footer-top .footer-contact {
@@ -1748,7 +1750,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #47b2e4;
+  background: #2aadab;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1776,9 +1778,20 @@ section {
   float: left;
 }
 
-#footer .credits {
-  float: right;
+#footer .credits a {
+  float: left;
   font-size: 13px;
+  color: #47b2e4;
+}
+
+#footer .credits a:hover {
+  color: #71c5ec;
+}
+ 
+
+#footer .credits h4 {
+ color: floralwhite;
+ margin-left: 10px;
 }
 
 #footer .credits a {
@@ -1893,3 +1906,71 @@ section {
   color: #2aadab;
 }
 
+#footer .footer-top .footer-links h4 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Jost", sans-serif;
+  
+}
+#footer .footer-top .footer-links p {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#footer .footer-top .footer-followus {
+  margin-bottom: 30px;
+  max-width: 50px;
+}
+
+#footer .footer-top .footer-followus h3 {
+  text-decoration: none;
+  color: #ffffff;
+}
+#footer .footer-top .footer-followus p {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+#footer .footer-top .footer-followus p {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#footer .footer-top .footer-links {
+  text-decoration: none;
+  background-color: #07f1f10c;
+  padding: 30px 30px 30px 30px;
+  border-radius: 15px;
+  margin-left: 15px;
+  align-items: center;
+}
+
+/* Definindo cores de hover específicas para cada ícone */
+.social-links a.twitter:hover .bi-twitter {
+  color: #ffffff; /* Cor do hover para Twitter */
+}
+
+.social-links a.facebook:hover .bi-facebook {
+  color: #3b5998; /* Cor do hover para Facebook */
+}
+
+.social-links a.instagram:hover .bi-instagram {
+  color: #e1306c; /* Cor do hover para Instagram */
+}
+
+.social-links a.google-plus:hover .bi-skype {
+  color: #dd4b39; /* Cor do hover para Google Plus */
+}
+
+.social-links a.linkedin:hover .bi-linkedin {
+  color: #ffffff; /* Cor do hover para LinkedIn */
+}
+.social-links a.github:hover .bi-github {
+  color: #000; /* Cor do hover para LinkedIn */
+}
+
+.social-links a.globe:hover .bi-globe {
+  color: #000; /* Cor do hover para LinkedIn */
+}
