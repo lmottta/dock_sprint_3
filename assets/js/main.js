@@ -290,3 +290,31 @@ document.addEventListener("DOMContentLoaded", function() {
   startCarousel();
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  var currentIndex = 0;
+  var items = document.querySelectorAll(".carousel-item");
+  var itemAmount = items.length;
+
+  function cycleItems(direction) {
+    items[currentIndex].classList.remove("active");
+    if(direction === 'next') {
+      currentIndex = (currentIndex + 1) % itemAmount;
+    } else if(direction === 'prev') {
+      currentIndex = (currentIndex - 1 + itemAmount) % itemAmount;
+    }
+    items[currentIndex].classList.add("active");
+  }
+
+  document.querySelector(".carousel-control-next").addEventListener("click", function() {
+    cycleItems('next');
+  });
+
+  document.querySelector(".carousel-control-prev").addEventListener("click", function() {
+    cycleItems('prev');
+  });
+
+  // Initialize the first item as active
+  if(items.length) {
+    items[0].classList.add("active");
+  }
+});

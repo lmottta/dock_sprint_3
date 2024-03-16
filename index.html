@@ -45,7 +45,7 @@
     <div class="container d-flex align-items-center">
 
       <h1 class="logo me-auto">
-        <img src="assets/img/logo_teste.png" alt="Dockthor" class="img-fluid"><a href="index.html"></a>
+        <img src="assets/img/logo_dockthor_negativo-vs2.png" alt="Dockthor" class="img-fluid"><a href="index.html"></a>
       </h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img--/logo.png" alt="" class="img-fluid"></a>-->
@@ -856,14 +856,12 @@
       </div>
     </div>
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+    <div class="footer-top" style="display: flex; align-items: center; justify-content: center;">
+      <div class="container" style="width: 100%;">
+        <div class="row" style="width: 100%; display: flex; align-items: center; justify-content: center;" >
 
-          <div class="col-lg-2 col-md-4" style="display: flex; align-items: center; justify-content: space-around;">
-          </div>
-
-          <div class="col-lg-5 col-md-5 footer-links"
+       
+          <div class="col-lg-6 col-md-6 footer-links"
             style="display: flex; align-items: center; justify-content: center;">
             <div class="footer-logo">
               <h4>ABOUT US</h4>
@@ -872,17 +870,16 @@
                 <a href="https://www.gov.br/lncc/pt-br" target="_blank">(LNCC)</a>, Brazil.
               </p>
             </div>
-            <a href="#" class="image-fluid" style="flex-shrink: 0;"><img
-                src="assets/img/apoioadores/logo-gmmsb-fundo-escuro-branco.png" style="width: 100px; height: 50px;"></a>
+            <span class="img-aboutus">
+            <a href="#" target="_blank">
+              <img src="assets/img/apoioadores/logo-gmmsb-fundo-escuro-branco.png" alt="Logo GMMSB"></a></span>
           </div>
 
-
-
           <div class="col-lg-2 col-md-4 footer-links"
-            style="display: flex; align-items: center; justify-content: space-around;">
+            style="display: flex; align-items: center; justify-content: center;">
             <div>
               <h4>FOLLOW US</h4>
-              <div class="social-links ">
+              <div class="social-links "style="height: 80px;">
                 <a href="http://www.gmmsb.lncc.br/" target="_blank" class="social-icon globe"><i
                     class="bi bi-globe"></i></a>
                 <a href="https://www.instagram.com/gmmsblncc/" target="_blank" class="social-icon instagram"><i
@@ -892,23 +889,18 @@
               </div>
             </div>
           </div>
-
-          <div class="credits" style="display: flex; justify-content: center; align-items: center;">
-            <a href="#" target="_blank">Terms of Use - Privacy</a>
-          </div>
-          <!-- Os comentários e links podem ser realocados como necessário -->
-        </div>
-        <div class="container footer-bottom clearfix"
-          style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-          <div class="text-center">
-            <strong><span>2013© All Rights Reserved by Laboratório Nacional de Computação Científica</span></strong>
-          </div>
-        </div>
-
-
-
-
-      </div>
+          <div style="display: flex; align-items: flex-start; justify-content: center; margin-top: 10px;">
+            <div class="creditos" style="flex-direction: column;">
+              <a href="#" onclick="openTermsOfUse()" target="_blank" style="margin-right: 10px;">Terms of Use - Privacy</a>
+              <script>
+                function openTermsOfUse() {
+                  var termsOfUsePopup = window.open('termsofuse.html', 'termosDeUso', 'width=600,height=600,left=200,top=200');
+                }
+              </script>
+              <span>
+                <span class="copyright">2013© All Rights Reserved by Laboratório Nacional de Computação Científica</span>
+              </span>
+            </div>
 
       <script>
         function acceptCookies() {

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Use - Dockthor System</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Terms of Use for the Dockthor System</h1>
+  <label for="language-select">Choose a language:</label>
+  <select id="language-select">
+    <option value="English">English</option>
+    <option value="Portuguese">Portuguese</option>
+  </select>
+
+  <div id="terms"></div>
+
+</div>
+
+<script>
+const terms = {
+  English: `
+    <h2>Last Updated: March 12, 2023</h2>
+    <h3>1. Acceptance of Terms</h3>
+    <p>
+      These terms of use ("Terms") govern your use of the Dockthor System (the "Service")
+      offered by Dockthor Labs (the "Provider"). Your use of the Service is conditioned
+      upon your acceptance of and compliance with these Terms.
+    </p>
+    <h3>2. Use License</h3>
+    <p>
+      Subject to the terms and conditions of these Terms, the Provider hereby grants,
+      without fee, permission to use the Service for lawful purposes. This includes the
+      right to access and use the Service, as well as to download or otherwise copy
+      materials from the Service for personal, non-commercial use.
+    </p>
+    <h3>3. Grants</h3>
+    <p>
+      The Provider grants you a non-exclusive, non-transferable, revocable license to
+      access and use the Service for the sole purpose of using the Service for lawful
+      purposes.
+    </p>
+    <h3>4. Restrictions on Use</h3>
+    <p>
+      You are not authorized to use the Service or any materials from the Service in
+      any way that is intended to damage or harm the Service or the rights of the
+      Provider or any third party. Without limiting the foregoing, you are not authorized
+      to:
+    </p>
+    <ul>
+      <li>Use the Service in any way that is intended to harm or damage the Service;</li>
+      <li>
+        Use the Service in any way that is intended to damage or harm the rights of the
+        Provider or any third party;
+      </li>
+      <li>Use the Service for any purpose that is illegal or in violation of any
+          applicable laws or regulations;
+      </li>
+      <li>
+        Use the Service in any way that could damage, disable, overburden, or impair the
+        Service or interfere with any other party's use of the Service;
+      </li>
+      <li>
+        Use the Service in any way that is inconsistent with any applicable laws or
+        regulations;
+      </li>
+      <li>
+        Use the Service for any purpose that could affect the security or integrity of
+        the Service or any third party's systems or networks or data; or
+      </li>
+      <li>
+        Use the Service in any way that is in violation of any applicable laws or
+        regulations or any other third party's terms of service.
+      </li>
+    </ul>
+    <h3>5. Termination</h3>
+    <p>
+      The Provider reserves the right, in its sole discretion, to modify or terminate the
+      Service at any time. If the Provider terminates the Service, you will no longer be
+      able to access the Service. The Provider will not be liable to you or any third
+      party for any termination of the Service.
+    </p>
+    <h3>6. Indemnification</h3>
+    <p>
+      You will indemnify and hold the Provider, its affiliates, and their respective
+      directors, officers, employees, and agents harmless from any claims or damages
+      arising out of your use of the Service or your violation of these Terms.
+    </p>
+    <h3>7. Liability</h3>
+    <p>
+      TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL THE PROVIDER
+      BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY CLAIMS, DAMAGES, OR OTHER LIABILITY
+      RELATED TO OR ARISING OUT OF YOUR USE OF THE SERVICE OR ANY OTHERWISE UNDER OR
+      IN CONNECTION WITH THESE TERMS, INCLUDING, WITHOUT LIMITATION, ANY DIRECT,
+      INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, OR ANY LOSS OF USE
+      OR DATA, EVEN IF THE PROVIDER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+      DAMAGES. THE FOREGOING LIMITATIONS ON LIABILITY SHALL APPLY TO ALL CLAIMS AND
+      DEMANDS IN CONNECTION WITH OR ARISING OUT OF YOUR USE OF THE SERVICE.
+    </p>
+    <h3>8. Miscellaneous</h3>
+    <p>
+      These Terms shall be governed by and construed in accordance with the laws of
+      [State or Country], without giving effect to any principles of conflicts of law. You
+      agree to submit to the exclusive jurisdiction of the courts located in [State or 
+      Country] for all disputes arising out of or relating to these Terms.
+    </p>
+  `,
+  Portuguese: `
+    <h2>Última atualização: [Data]</h2>
+    <h3>1. Aceitação dos Termos</h3>
+    Ao utilizar o serviço, você concorda em aderir a estes termos e condições. Ao acessar ou utilizar o serviço, você confirma que tem 18 anos ou mais e tem capacidade legal para concordar com estes termos. 
+    Estes termos e condições podem ser modificados a qualquer momento sem aviso prévio. Ao continuar usando o serviço, você concorda em estar de acordo com as regras e políticas atuais. 
+    Se você não concordar com algum termo específico, por favor, não utilize o serviço.
+    <h3>2. Acessibilidade</h3>
+    O usuário tem o direito de acessar e usar o serviço para o seu uso pessoal e para fins legais. O usuário tem o direito de usar o serviço para o seu uso pessoal e para fins legais.
+    <h3>3. Acessibilidade</h3>
+    O usuário tem o direito de acessar e usar o serviço para o seu uso pessoal e para fins legais. O usuário tem o direito de usar o serviço para o seu uso pessoal e para fins legais.
+    <h3>4. Uso ilegal</h3>
+    O usuário tem o direito de acessar e usar o serviço para o seu uso pessoal e para fins legais. O usuário tem o direito de usar o serviço para o seu uso pessoal e para fins legais.
+    <h3>5. Terminação</h3>
+    O usuário tem o direito de acessar e usar o serviço para o seu uso pessoal e para fins legais. O usuário tem o direito de usar o serviço para o seu uso pessoal e para fins legais.
+    <h3>6. Indenização</h3>
+    O usuário tem o direito de acessar e usar o serviço para o seu uso pessoal e para fins legais. O usuário tem o direito de usar o serviço para o seu uso pessoal e para fins legais.
+    <h3>7. Responsabilidade</h3>
+    O usuário tem o direito de acessar e usar o serviço para o seu uso pessoal e para fins legais. O usuário tem o direito de usar o serviço para o seu uso pessoal e para fins legais.
+    <h3>8. Miscelania</h3>
+    Estes termos se regem por leis “[State or Country]”, sem nenhum efeito sobre os princi
+    plos de conflitos de lei. O usuário concorda no cumprimento de todas as demandas e
+    reclama devidamente, incluindo, sem limitação, qualquer dano direto, indireto, especial,
+    incidental ou consequente, incluindo, sem limitação, qualquer dano direto, indireto,
+    especial, incidental ou consequente, incluindo, sem limitação, lucro, prejuízo ou
+    indenização por terceiros. Estes termos e condições podem ser alterados a qualquer momento sem aviso pre
+   vio. Ao continuar usando o serviço, concorda em estar de acordo com as regras e condic
+    onais atuais. Se você não concordar com algum termo específico, por favor, não use o serviço. 
+    
+  `
+};
+
+document.getElementById('language-select').addEventListener('change', function (e) {
+  const language = e.target.value;
+  const termsElement = document.getElementById('terms');
+  termsElement.innerHTML = terms[language];
+  termsElement.style.display = 'block';
+});
+
+// Initialize with English terms
+document.getElementById('terms').innerHTML = terms['English'];
+document.getElementById('terms').style.display = 'block';
+</script>
+
+</body>
+</html>
