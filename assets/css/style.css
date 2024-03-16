@@ -111,7 +111,8 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 50px;
+  max-height: 60px;
+  max-width: 220px;
 }
 
 /*--------------------------------------------------------------
@@ -1890,7 +1891,17 @@ section {
   }
 
   /* Efeito Srcolled branco*/
+
 }
+.header-scrolled .scroll-img {
+    content: url("../img/logo_teste.png");
+    width: 220px;
+    height: 60px;
+    
+  }
+  
+  
+
 #header.header-scrolled .getstarted {
   color: #373737;
 }
