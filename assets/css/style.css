@@ -1895,8 +1895,8 @@ section {
 }
 .header-scrolled .scroll-img {
     content: url("../img/logo_teste.png");
-    width: 220px;
-    height: 60px;
+    max-width: 220px;
+    height: 50px;
     
   }
   
