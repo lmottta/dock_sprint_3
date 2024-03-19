@@ -46,9 +46,9 @@
 
       <h1 class="logo me-auto scroll-img">
         <img src="assets/img/logo_dockthor_negativo-vs2.png" alt="Dockthor" class="img-fluid scroll-img-top">
-       
+
       </h1>
-     
+
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -105,29 +105,12 @@
   <main id="main">
 
     <!-- Add this script tag at the end of your body or in the head with defer attribute -->
-
-    <!-- ======= Clients Section ======= -->
-    <style>
-      .carousel-container {
-        display: flex;
-        overflow: hidden;
-      }
-
-      .carousel-item {
-        display: flex;
-        flex-wrap: nowrap;
-        width: 100%;
-        transition: transform 0.5s ease;
-      }
-
-      .carousel-item img {
-        max-width: 50%;
-        /* Show 4 images at a time */
-        flex: 0 0 auto;
-      }
-    </style>
-
+    
     <section id="clients" class="clients section-bg">
+      <div class="carousel-navigation">
+        <button id="prevButton"><i class="bi bi-chevron-left"></i> </button>
+        <button id="nextButton"><i class="bi bi-chevron-right"></i></button>
+      </div>
       <div class="container">
         <div class="carousel-container" data-aos="zoom-in">
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
@@ -168,7 +151,8 @@
           </div>
         </div>
       </div>
-    </section><!-- End Clients Section -->
+    </section>
+    <!-- End Clients Section -->
 
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
@@ -858,9 +842,9 @@
 
     <div class="footer-top" style="display: flex; align-items: center; justify-content: center;">
       <div class="container" style="width: 100%;">
-        <div class="row" style="width: 100%; display: flex; align-items: center; justify-content: center;" >
+        <div class="row" style="width: 100%; display: flex; align-items: center; justify-content: center;">
 
-       
+
           <div class="col-lg-6 col-md-6 footer-links"
             style="display: flex; align-items: center; justify-content: center;">
             <div class="footer-logo">
@@ -871,15 +855,15 @@
               </p>
             </div>
             <span class="img-aboutus">
-            <a href="#" target="_blank">
-              <img src="assets/img/apoioadores/logo-gmmsb-fundo-escuro-branco.png" alt="Logo GMMSB"></a></span>
+              <a href="#" target="_blank">
+                <img src="assets/img/apoioadores/logo-gmmsb-fundo-escuro-branco.png" alt="Logo GMMSB"></a></span>
           </div>
 
           <div class="col-lg-2 col-md-4 footer-links"
             style="display: flex; align-items: center; justify-content: center;">
             <div>
               <h4>FOLLOW US</h4>
-              <div class="social-links "style="height: 80px;">
+              <div class="social-links " style="height: 80px;">
                 <a href="http://www.gmmsb.lncc.br/" target="_blank" class="social-icon globe"><i
                     class="bi bi-globe"></i></a>
                 <a href="https://www.instagram.com/gmmsblncc/" target="_blank" class="social-icon instagram"><i
@@ -890,34 +874,35 @@
             </div>
           </div>
         </div>
-          <div style="display: flex; align-items: flex-start; justify-content: center; margin-top: 10px;">
-            <div class="creditos" style="flex-direction: column;">
-              <a href="#" onclick="openTermsOfUse()" target="_blank" style="margin-right: 10px;">Terms of Use - Privacy</a>
-              <script>
-                function openTermsOfUse() {
-                  var termsOfUsePopup = window.open('termsofuse.html', 'termosDeUso', 'width=600,height=600,left=200,top=200');
-                }
-              </script>
-              <span>
-                <span class="copyright">2013© All Rights Reserved by Laboratório Nacional de Computação Científica</span>
-              </span>
-            </div>
+        <div style="display: flex; align-items: flex-start; justify-content: center; margin-top: 10px;">
+          <div class="creditos" style="flex-direction: column;">
+            <a href="#" onclick="openTermsOfUse()" target="_blank" style="margin-right: 10px;">Terms of Use -
+              Privacy</a>
+            <script>
+              function openTermsOfUse() {
+                var termsOfUsePopup = window.open('termsofuse.html', 'termosDeUso', 'width=600,height=600,left=200,top=200');
+              }
+            </script>
+            <span>
+              <span class="copyright">2013© All Rights Reserved by Laboratório Nacional de Computação Científica</span>
+            </span>
+          </div>
 
-      <script>
-        function acceptCookies() {
-          var cookieConsent = document.getElementById('cookieConsent');
-          if (cookieConsent) {
-            cookieConsent.style.display = 'none';
-            // Add code here to set cookie indicating user has accepted
-          } else {
-            console.error('Cookie consent element not found');
-          }
-        }
-      </script>
-      <div class="cookieConsent" id="cookieConsent">
-        This website uses cookies to ensure you get the best experience on our website.
-        <button class="button getstarted" onclick="acceptCookies()">Accept</button>
-      </div>
+          <script>
+            function acceptCookies() {
+              var cookieConsent = document.getElementById('cookieConsent');
+              if (cookieConsent) {
+                cookieConsent.style.display = 'none';
+                // Add code here to set cookie indicating user has accepted
+              } else {
+                console.error('Cookie consent element not found');
+              }
+            }
+          </script>
+          <div class="cookieConsent" id="cookieConsent">
+            This website uses cookies to ensure you get the best experience on our website.
+            <button class="button getstarted" onclick="acceptCookies()">Accept</button>
+          </div>
 
   </footer><!-- End Footer -->
 
@@ -959,6 +944,7 @@
     }
 
     window.onload = checkCookieConsent;
+
   </script>
 
 

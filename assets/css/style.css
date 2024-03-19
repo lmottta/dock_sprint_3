@@ -1986,3 +1986,63 @@ section {
   text-decoration: none;
   color: #fff;
 }
+
+/*Apoiadores*/
+
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-item {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item img {
+  max-width: 50%;
+  /* Show 4 images at a time */
+  flex: 0 0 auto;
+}
+
+#clients {
+  position: relative;
+}
+
+.carousel-navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+#prevButton {
+  position: flex;
+  left: 0;
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 50px;
+  color: #2aadab;
+  font-size: 34px;
+  font-weight: 600;
+  border: #fff;
+  background-color: #fff;
+ 
+}
+
+#nextButton {
+  position: flex;
+  left: 0;
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 50px;
+  color: #2aadab;
+  font-size: 34px;
+  font-weight: 600;
+  border: #fff;
+  background-color: #fff;
+}

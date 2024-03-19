@@ -290,31 +290,16 @@ document.addEventListener("DOMContentLoaded", function() {
   startCarousel();
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  var currentIndex = 0;
-  var items = document.querySelectorAll(".carousel-item");
-  var itemAmount = items.length;
+document.addEventListener('DOMContentLoaded', (event) => {
+  const carouselContainer = document.querySelector('.carousel-container');
+  const prevButton = document.getElementById('prevButton');
+  const nextButton = document.getElementById('nextButton');
 
-  function cycleItems(direction) {
-    items[currentIndex].classList.remove("active");
-    if(direction === 'next') {
-      currentIndex = (currentIndex + 1) % itemAmount;
-    } else if(direction === 'prev') {
-      currentIndex = (currentIndex - 1 + itemAmount) % itemAmount;
-    }
-    items[currentIndex].classList.add("active");
-  }
-
-  document.querySelector(".carousel-control-next").addEventListener("click", function() {
-    cycleItems('next');
+  prevButton.addEventListener('click', () => {
+    carouselContainer.scrollBy({ left: -carouselContainer.offsetWidth, behavior: 'smooth' });
   });
 
-  document.querySelector(".carousel-control-prev").addEventListener("click", function() {
-    cycleItems('prev');
+  nextButton.addEventListener('click', () => {
+    carouselContainer.scrollBy({ left: carouselContainer.offsetWidth, behavior: 'smooth' });
   });
-
-  // Initialize the first item as active
-  if(items.length) {
-    items[0].classList.add("active");
-  }
 });
