@@ -2026,12 +2026,11 @@ section {
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 50px;
-  color: #2aadab;
+  color: #666969;
   font-size: 34px;
   font-weight: 600;
   border: #fff;
-  background-color: #fff;
- 
+  background-color: transparent;
 }
 
 #nextButton {
@@ -2040,9 +2039,14 @@ section {
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 50px;
-  color: #2aadab;
+  color: #666969;
   font-size: 34px;
   font-weight: 600;
   border: #fff;
-  background-color: #fff;
+  background-color: transparent;
+}
+
+#prevButton:hover, #nextButton:hover {
+  color:#207d7a;
+  cursor: pointer;
 }
