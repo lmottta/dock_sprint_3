@@ -263,21 +263,22 @@ document.addEventListener("DOMContentLoaded", function() {
   let intervalId;
   const itemsToShow = 6;
 
-  function moveItems() {
-    const items = carousel.children;
-    for (let i = 0; i < itemsToShow; i++) {
-      if (items[i]) {
-        carousel.appendChild(items[i].cloneNode(true));
-      }
-    }
-    // Remova os itens que foram movidos, do início do carrossel
-    for (let i = 0; i < itemsToShow; i++) {
+  function moveItems(direction) {
+    const items = Array.from(carousel.children);
+    const totalItems = items.length;
+
+    if (direction === 'next') {
+      carousel.appendChild(items[0].cloneNode(true));
       carousel.removeChild(items[0]);
+    } else if (direction === 'prev') {
+      const lastItem = items[totalItems - 1];
+      carousel.insertBefore(lastItem.cloneNode(true), carousel.firstChild);
+      carousel.removeChild(lastItem);
     }
   }
 
   function startCarousel() {
-    intervalId = setInterval(moveItems, 3000);
+    intervalId = setInterval(() => moveItems('next'), 3000);
   }
 
   function stopCarousel() {
@@ -287,19 +288,20 @@ document.addEventListener("DOMContentLoaded", function() {
   carousel.addEventListener('mouseenter', stopCarousel);
   carousel.addEventListener('mouseleave', startCarousel);
 
-  startCarousel();
-});
-
-document.addEventListener('DOMContentLoaded', (event) => {
-  const carouselContainer = document.querySelector('.carousel-container');
   const prevButton = document.getElementById('prevButton');
   const nextButton = document.getElementById('nextButton');
 
   prevButton.addEventListener('click', () => {
-    carouselContainer.scrollBy({ left: -carouselContainer.offsetWidth, behavior: 'smooth' });
+    stopCarousel();
+    moveItems('prev');
+    startCarousel();
   });
 
   nextButton.addEventListener('click', () => {
-    carouselContainer.scrollBy({ left: carouselContainer.offsetWidth, behavior: 'smooth' });
+    stopCarousel();
+    moveItems('next');
+    startCarousel();
   });
+
+  startCarousel();
 });
